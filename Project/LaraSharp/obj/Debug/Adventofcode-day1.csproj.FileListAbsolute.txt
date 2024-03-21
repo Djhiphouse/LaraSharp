@@ -1,0 +1,6 @@
+/Users/djhiphouse/RiderProjects/Adventofcode-day1/Adventofcode-day1/bin/Debug/Adventofcode_day1.exe
+/Users/djhiphouse/RiderProjects/Adventofcode-day1/Adventofcode-day1/bin/Debug/Adventofcode_day1.pdb
+/Users/djhiphouse/RiderProjects/Adventofcode-day1/Adventofcode-day1/obj/Debug/Adventofcode-day1.csproj.AssemblyReference.cache
+/Users/djhiphouse/RiderProjects/Adventofcode-day1/Adventofcode-day1/obj/Debug/Adventofcode-day1.csproj.CoreCompileInputs.cache
+/Users/djhiphouse/RiderProjects/Adventofcode-day1/Adventofcode-day1/obj/Debug/Adventofcode_day1.exe
+/Users/djhiphouse/RiderProjects/Adventofcode-day1/Adventofcode-day1/obj/Debug/Adventofcode_day1.pdb

@@ -1,0 +1,6 @@
+/Users/djhiphouse/RiderProjects/LaraSharp/LaraSharp/bin/Debug/Adventofcode_day1.exe
+/Users/djhiphouse/RiderProjects/LaraSharp/LaraSharp/bin/Debug/Adventofcode_day1.pdb
+/Users/djhiphouse/RiderProjects/LaraSharp/LaraSharp/obj/Debug/LaraSharp.csproj.AssemblyReference.cache
+/Users/djhiphouse/RiderProjects/LaraSharp/LaraSharp/obj/Debug/LaraSharp.csproj.CoreCompileInputs.cache
+/Users/djhiphouse/RiderProjects/LaraSharp/LaraSharp/obj/Debug/Adventofcode_day1.exe
+/Users/djhiphouse/RiderProjects/LaraSharp/LaraSharp/obj/Debug/Adventofcode_day1.pdb
