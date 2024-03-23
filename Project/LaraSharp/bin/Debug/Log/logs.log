@@ -3,3 +3,49 @@ Http Status -> Started : 3/22/2024 12:21:11 AM
 Initialization -> Success : 3/22/2024 12:21:24 AM
 Route Register -> Success : 3/22/2024 12:21:24 AM
 Http Status -> Started : 3/22/2024 12:21:24 AM
+Initialization -> Success : 3/23/2024 1:00:33 PM
+Route Register -> Success : 3/23/2024 1:00:33 PM
+Http Status -> Started : 3/23/2024 1:00:33 PM
+Request GET -> Recive from 127.0.0.1:57327 Route ->  : 3/23/2024 1:01:11 PM
+Request GET -> Recive from 127.0.0.1:57327 Route -> app.js : 3/23/2024 1:01:11 PM
+Request GET -> Recive from 127.0.0.1:57492 Route ->  : 3/23/2024 1:09:14 PM
+Request GET -> Recive from 127.0.0.1:57492 Route -> app.js : 3/23/2024 1:09:14 PM
+Initialization -> Success : 3/23/2024 1:09:25 PM
+Route Register -> Success : 3/23/2024 1:09:25 PM
+Http Status -> Started : 3/23/2024 1:09:25 PM
+Request GET -> Recive from 127.0.0.1:57508 Route ->  : 3/23/2024 1:13:47 PM
+Request GET -> Recive from 127.0.0.1:57508 Route -> Icons : 3/23/2024 1:13:48 PM
+Request GET -> Recive from 127.0.0.1:57509 Route -> app.js : 3/23/2024 1:13:48 PM
+Initialization -> Success : 3/23/2024 1:14:01 PM
+Route Register -> Success : 3/23/2024 1:14:01 PM
+Http Status -> Started : 3/23/2024 1:14:01 PM
+Request GET -> Recive from 127.0.0.1:57512 Route ->  : 3/23/2024 1:14:13 PM
+Request GET -> Recive from 127.0.0.1:57512 Route -> error.png : 3/23/2024 1:14:13 PM
+Request GET -> Recive from 127.0.0.1:57513 Route -> app.js : 3/23/2024 1:14:13 PM
+Initialization -> Success : 3/23/2024 1:35:38 PM
+Route Register -> Success : 3/23/2024 1:35:38 PM
+Http Status -> Started : 3/23/2024 1:35:39 PM
+Initialization -> Success : 3/23/2024 1:37:42 PM
+Route Register -> Success : 3/23/2024 1:37:42 PM
+Http Status -> Started : 3/23/2024 1:37:43 PM
+Initialization -> Success : 3/23/2024 1:39:36 PM
+Route Register -> Success : 3/23/2024 1:39:36 PM
+Http Status -> Started : 3/23/2024 1:39:36 PM
+Initialization -> Success : 3/23/2024 1:52:00 PM
+Route Register -> Success : 3/23/2024 1:52:00 PM
+Http Status -> Started : 3/23/2024 1:52:00 PM
+Initialization -> Success : 3/23/2024 1:53:31 PM
+Route Register -> Success : 3/23/2024 1:53:31 PM
+Http Status -> Started : 3/23/2024 1:53:31 PM
+Initialization -> Success : 3/23/2024 2:00:58 PM
+Route Register -> Success : 3/23/2024 2:00:58 PM
+Http Status -> Started : 3/23/2024 2:00:58 PM
+Initialization -> Success : 3/23/2024 2:01:20 PM
+Route Register -> Success : 3/23/2024 2:01:20 PM
+Http Status -> Started : 3/23/2024 2:01:20 PM
+Initialization -> Success : 3/23/2024 2:05:12 PM
+Route Register -> Success : 3/23/2024 2:05:12 PM
+Http Status -> Started : 3/23/2024 2:05:12 PM
+Initialization -> Success : 3/23/2024 2:08:44 PM
+Route Register -> Success : 3/23/2024 2:08:44 PM
+Http Status -> Started : 3/23/2024 2:08:44 PM
