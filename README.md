@@ -1,6 +1,7 @@
 
 # LaraSharp Documentation
-![LaraSharp Logo](https://cdn.discordapp.com/attachments/1165057088146386954/1255179559691747351/DALLE_2024-06-25_17.14.41_-_A_logo_resembling_the_Laravel_framework_logo_but_in_red_incorporating_the_name_LaraSharp._The_design_should_include_the_geometric_cube-like_elemen.webp?ex=667c308f&is=667adf0f&hm=8815b796e0bae224adf52fef3bf97cfdfd14471798fee0c4cc3270a7bcf5391b&)
+<img src="https://cdn.discordapp.com/attachments/1165057088146386954/1255180248757174322/DALL_E-2024-06-25-17.14-removebg-preview.png?ex=667c3133&is=667adfb3&hm=18ef020779de912b0242fad21276c0bc129b52f6e874b36b937ec96a74ce1158&" alt="LaraSharp Logo" width="300"/>
+
 
 ## Introduction
 
