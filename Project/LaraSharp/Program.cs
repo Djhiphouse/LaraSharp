@@ -1,29 +1,44 @@
 ﻿using System;
+using System.IO;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Xml.Linq;
+using Adventofcode_day1.Javascript;
+using Adventofcode_day1.Models;
 using Adventofcode_day1.Server;
 using Adventofcode_day1.Settings;
-using Adventofcode_day1.Sql;
+using Adventofcode_day1.Views;
+using Newtonsoft.Json;
 
-class Program
+
+public class Program
 {
     static async Task Main(string[] args)
     {
-        SqlBuilder builder = new SqlBuilder("localhost", "3006", "root", "ru[i43uxm0DY&4Tj}Z\"3|/5?^!R|c,8%((VQ:T_z&@tJU", "test");
-        Sql sql = new Sql(builder.Database, builder.Connection);
-        string conetent =  await sql.Read("base", new string[] { "test" });
+        Instance.ManagedUserInput(args);
+        Instance.Initialize();
         
-        Console.WriteLine(conetent);
+        Instance.SqlInitialize();
+        Instance.ViewsInitialize();
+        Instance.RegisterRoute("/welcome", Login.htmlBuilder);
+        Instance.RegisterRoute("/logs", LogsView.htmlBuilder);
         
-        Settings settings = new Settings();
-        settings.Initializ();
-        settings.SetSettings();
-        Http http = new Http();
-        http.Start();
+        Instance.RegisterApiRoute("/api/usertable",  request =>
+        {
+            var users =  Task.Run(() => User.GetUsersForTable());
+            return JsonConvert.SerializeObject(users);
+        });
+        
+        Instance.RegisterApiRoute("/api/logs",  request =>
+        {
+            var users =  Task.Run(() => Logs.GetLogsForTable());
+            return JsonConvert.SerializeObject(users);
+        });
+        
+        Instance.StartUp();
         Thread.Sleep(-1);
     }
-    
-    
 }
 

@@ -2,6 +2,9 @@ using System;
 using System.IO;
 using System.Net;
 using System.Threading.Tasks;
+using Adventofcode_day1.Models;
+using Adventofcode_day1.Settings;
+using Adventofcode_day1.Views;
 
 namespace Adventofcode_day1.Server
 {
@@ -9,32 +12,28 @@ namespace Adventofcode_day1.Server
     {
         public string host { get; set; }
         public int port { get; set; }
+        public static string view { get; set; }
         
         private static HttpListener listener;
         public Http()
         {
-            Settings.Settings settings = new Settings.Settings();
-            this.host = "127.0.0.1";
-            this.port = Int32.Parse(settings.GetSetting("PORT"));
+            this.host = Instance.Host;
+            this.port = Int32.Parse(Instance.Port);
             
             listener = new HttpListener();
             listener.Prefixes.Add($"http://{this.host}:{this.port}/");
-            
-            Console.WriteLine("Server is running on " + this.host + ":" + this.port);
-            Routes.RegisterRoute("/welcome", "index");
-            Routes.RegisterRoute("/error", "error");
-            
+
+            Instance.debugger.DebugSuccess($@"Server is running on {this.host}:{this.port}", "HTTP SERVER");
             Log.Logger.LogMessage("Route Register -> Success");
         }
         
         public void Start()
         {
             listener.Start();
-            Console.WriteLine("Listening for connections on " + $"{this.host}:{this.port}");
+            Instance.debugger.DebugSuccess($@"Listening....", "HTTP LISTENING");
             Log.Logger.LogMessage("Http Status -> Started");
             Task listenTask = HandleIncomingConnections();
             listenTask.GetAwaiter().GetResult();
-
             listener.Close();
         }
 
@@ -49,7 +48,7 @@ namespace Adventofcode_day1.Server
                 HttpListenerRequest req = ctx.Request;
                 HttpListenerResponse resp = ctx.Response;
                 
-                string view = String.Empty;
+               
                 string route = String.Empty;
                 
                 try
@@ -58,18 +57,34 @@ namespace Adventofcode_day1.Server
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Error: " + "Route not found");
+                    Instance.debugger.DebugError("Route not found", "NOT FOUND");
+                    Log.Logger.LogMessage("Route not found -> " + req.RemoteEndPoint.ToString());
+                    Instance.debugger.DebugError("Redirecting to 404", "NOT FOUND");
                     return;
                 }
                
                 
                 if (req.HttpMethod == "GET")
                 {
-                    Log.Logger.LogMessage("Request GET -> Recive from " + req.RemoteEndPoint.ToString() + " Route -> " + route);
-                    view = Routes.GetRoute(route);
+                    Instance.debugger.DebugInfo("Request GET -> Receive from " + req.RemoteEndPoint.ToString() + " Route -> " + route, "HTTP GET");
+                    Log.Logger.LogMessage("Request GET -> Receive from " + req.RemoteEndPoint.ToString() + " Route -> " + route);
+                    if (route == "logincheck")
+                    { 
+                        Console.WriteLine("Login Check: " + await User.CheckLogin(req.QueryString["username"], req.QueryString["password"]));
+                        view = await User.CheckLogin(req.QueryString["username"], req.QueryString["password"]);
+                        
+                    }else if (route == "register")
+                    {
+                        view = Routes.GetRoute(await User.CheckLogin(req.QueryString["username"], req.QueryString["password"]));
+                    }
+                    else
+                    {
+                        view = Routes.GetRoute(route);
+                    }
                 }
                 else if (req.HttpMethod == "POST")
                 {
+                    Instance.debugger.DebugInfo("Request POST -> Recive from " + req.RemoteEndPoint.ToString() + " Route -> " + route, "HTTP POST");
                      Log.Logger.LogMessage("Request POST -> Recive from " + req.RemoteEndPoint.ToString() + " Route -> " + route);
                      view = Routes.GetRoute(route);
                 }

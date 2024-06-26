@@ -3,18 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Not Found</title>
+    <title>Login Form</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 flex items-center justify-center min-h-screen text-white">
-<div class="text-center">
-    <div class="flex items-center space-x-2 flex-row">
-      <img src="error.png" class="animate-bounce w-24 h-24">
-       <h1 class="text-4xl font-bold mb-2">Not Found</h1>
+<body class="bg-gray-200 flex items-center justify-center h-screen">
+<div class="bg-white p-8 rounded-lg shadow-md w-96">
+    <h2 class="text-2xl font-semibold text-gray-700 text-center">Login</h2>
+    <div class="mt-4">
+        <label class="block">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" class="mt-1 px-4 py-2 w-full border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
     </div>
-    <p class="mb-6">Oops! The page you're looking for doesn't exist.</p>
-    <a href="/" class="px-4 py-2 bg-gray-800 rounded hover:bg-gray-700">Go Home</a>
+    <div class="mt-4">
+        <label class="block">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" class="mt-1 px-4 py-2 w-full border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+    </div>
+    <button onclick="sendLoginRequest()" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md w-full hover:bg-blue-600">Login</button>
+    <!-- Placeholder for login result message -->
+    <p id="loginMessage" class="mt-4 text-center"></p>
 </div>
-<script src="app.js"></script>
+
+<script>
+    function sendLoginRequest() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        fetch('http://127.0.0.1:3000/logincheck', {
+            method: 'GET',
+            headers: {
+                'Username': username,
+                'Password': password,
+            },
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text(); // Use .text() for plain text responses
+            })
+            .then(data => {
+                if(data === 'true') {
+                    // Trigger SweetAlert2 success alert
+                    Swal.fire({
+                        title: "Login",
+                        text: "Logging in Successfully",
+                        icon: "success"
+                    });
+                } else if(data === 'false') {
+                    // Trigger SweetAlert2 error alert
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Login failed",
+                        footer: '<a href="#">Why do I have this issue?</a>'
+                    });
+                } else {
+                    // Handle unexpected data
+                    Swal.fire({
+                        icon: "warning",
+                        title: "Unexpected response",
+                        text: "Please try again later.",
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // Trigger SweetAlert2 for network errors or other issues
+                Swal.fire({
+                    icon: "error",
+                    title: "Error",
+                    text: "An error occurred. Please try again later.",
+                });
+            });
+    }
+</script>
 </body>
 </html>

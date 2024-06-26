@@ -13,14 +13,19 @@ namespace Adventofcode_day1.Settings
         {
             foreach (var setting in File.ReadAllLines("Settings/env.conf"))
             {
-                if (setting == "") 
+                if (string.IsNullOrWhiteSpace(setting))
                     continue;
-                
+        
+                Console.WriteLine("Setting -> " + setting);
                 string[] currentSetting = setting.Split('=');
-                //Console.WriteLine("Setting Name: " + currentSetting[0] + " = " + " Set: " + currentSetting[1]);
-                Setting.Add(currentSetting[0], currentSetting[1]);
+                if (currentSetting.Length == 2) // Ensure there are exactly two parts: key and value.
+                { 
+                    Setting[currentSetting[0].Trim()] = currentSetting[1].Trim(); // Use Trim to remove any leading/trailing whitespace.
+                }
+               
             }
         }
+
         
         public string GetSetting(string setting)
         {
@@ -88,7 +93,6 @@ namespace Adventofcode_day1.Settings
             }
             else
             {
-                Console.WriteLine("Initialization -> End with error");
                 Environment.Exit(0);
             }
            

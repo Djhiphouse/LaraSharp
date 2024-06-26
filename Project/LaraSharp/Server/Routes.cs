@@ -2,6 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Adventofcode_day1.Html;
+using Adventofcode_day1.Log;
+using Adventofcode_day1.Settings;
 
 namespace Adventofcode_day1.Server
 {
@@ -14,13 +17,12 @@ namespace Adventofcode_day1.Server
             return CachedRoutes.ToList().Select(x => x.Key).ToList();
         }
         
-        public static void RegisterRoute(string route, string view)
+        public static void RegisterRoute(string route, HtmlBuilder view)
         {
-            string viewPath = "Views/" + view + ".html";
-            string htmlConetent = String.Empty;
+            string htmlConetent = view.GetHTML();
             try
             {
-              htmlConetent = File.ReadAllText(viewPath);
+                Logger.LogMessage("Register Route -> " + route);  
             }
             catch (Exception e)
             {
@@ -32,7 +34,7 @@ namespace Adventofcode_day1.Server
         
         public static string GetRoute(string route)
         {
-            Console.WriteLine("Route: " + route);
+            Instance.debugger.DebugInfo("Get Route -> " + route, "ROUTES");
             if (CachedRoutes.ContainsKey("/" + route))
             {
                 return CachedRoutes["/" + route];
