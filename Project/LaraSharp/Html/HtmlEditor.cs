@@ -23,6 +23,18 @@ namespace Adventofcode_day1.Html
     {
         protected StringBuilder _html;
 
+        
+        public string AddLiveNotification(string title, string message, string icon = "success")
+        {
+            return $@"
+                    Swal.fire({{
+                        title: '{title}',
+                        text: '{message}',
+                        icon: '{icon}',
+                        confirmButtonText: 'OK'
+                    }});
+                ";
+        }
         public HtmlBuilder()
         {
             _html = new StringBuilder();
@@ -40,7 +52,22 @@ namespace Adventofcode_day1.Html
                     <meta charset='UTF-8'>
                     <title>Dynamic DOM Updates via Button</title>
                     <link href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css' rel='stylesheet'>
+                    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
                 </head>");
+            return this;
+        }
+        
+        public HtmlBuilder AddNotification(string title, string message, string icon = "success")
+        {
+            _html.Append($@"
+                <script>
+                    Swal.fire({{
+                        title: '{title}',
+                        text: '{message}',
+                        icon: '{icon}',
+                        confirmButtonText: 'OK'
+                    }});
+                </script>");
             return this;
         }
         
@@ -55,10 +82,14 @@ namespace Adventofcode_day1.Html
             return this;
         }
 
-        public HtmlBuilder Form(bool autosize = true, int width = 0, int height = 0)
+        public HtmlBuilder Form(string actionUrl, string method = "POST", bool autosize = true, int width = 0, int height = 0)
         {
             string sizeStyle = autosize ? $"min-width: {width}px; min-height: {height}px;" : $"width: {width}px; height: {height}px;";
-            _html.Append($"<form style='{sizeStyle}' class='w-auto h-auto bg-white rounded px-4 py-6 flex flex-col space-y-4'>");
+            _html.Append($@"
+                <form id='dynamicForm' action='{"http://" +Instance.Host + ":8005/request" + actionUrl}' method='{method}' style='{sizeStyle}' class='w-auto h-auto bg-white rounded px-4 py-6 flex flex-col space-y-4' onsubmit='submitForm(event)'>
+                    <div id='formFields'></div>
+                    <button type='submit' class='bg-green-600 text-white px-4 py-2 rounded'>Submit</button>
+                </form>");
             return this;
         }
 
@@ -67,6 +98,33 @@ namespace Adventofcode_day1.Html
             _html.Append($"<label class='text-gray-700'>{text}</label>");
             return this;
         }
+
+        public HtmlBuilder AddInput(string name, string placeholder, string id)
+        {
+            _html.Append($@"
+                <div>
+                    <label for='{id}' class='text-gray-700'>{name}</label>
+                    <input id='{id}' type='text' name='{name}' placeholder='{placeholder}' class='w-full h-10 px-3 border border-gray-300 rounded'>
+                </div>");
+            return this;
+        }
+
+        public HtmlBuilder AddTextArea(string name, string placeholder, string id)
+        {
+            _html.Append($@"
+                <div>
+                    <label for='{id}' class='text-gray-700'>{name}</label>
+                    <textarea id='{id}' name='{name}' placeholder='{placeholder}' class='w-full h-20 px-3 border border-gray-300 rounded'></textarea>
+                </div>");
+            return this;
+        }
+
+        public HtmlBuilder EndForm()
+        {
+            _html.Append("</form>");
+            return this;
+        }
+
 
         public HtmlBuilder RefreshContent()
         {
@@ -306,18 +364,7 @@ namespace Adventofcode_day1.Html
 
 
 
-        public HtmlBuilder AddInput(string name, string placeholder, string id)
-        {
-            _html.Append($"<input id='{id}' type='text' name='{name}' placeholder='{placeholder}' class='w-full h-10 px-3 border border-gray-300 rounded'>");
-            return this;
-        }
-
-        public HtmlBuilder AddTextArea(string name, string placeholder, string id)
-        {
-            _html.Append($"<textarea id='{id}' name='{name}' placeholder='{placeholder}' class='w-full h-20 px-3 border border-gray-300 rounded'></textarea>");
-            return this;
-        }
-
+       
         public HtmlBuilder EndRefreshContent()
         {
             _html.Append("</div>");
@@ -329,11 +376,7 @@ namespace Adventofcode_day1.Html
             return this;
         }
 
-        public HtmlBuilder EndForm()
-        {
-            _html.Append("</form>");
-            return this;
-        }
+       
 
         public HtmlBuilder EndPage()
         {
@@ -353,7 +396,7 @@ namespace Adventofcode_day1.Html
                     }}
                 }})
                 .catch(error => console.error('Failed to fetch command:', error));
-        }}, 3000); // Poll every 3 seconds
+        }}, 300); // Poll every 3 seconds
 
         function sendFunction(action, param) {{
             const url = `http://{Instance.Host}:8080/${{action}}?param=${{encodeURIComponent(param)}}`;

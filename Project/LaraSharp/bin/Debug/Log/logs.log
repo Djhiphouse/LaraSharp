@@ -1126,3 +1126,293 @@ Route Register -> Success : 6/27/2024 12:40:44 AM
 Http Status -> Started : 6/27/2024 12:40:45 AM
 Request GET -> Receive from 127.0.0.1:56548 Route -> logs : 6/27/2024 12:40:49 AM
 Request GET -> Receive from 127.0.0.1:56575 Route -> logs : 6/27/2024 12:46:43 AM
+Initialization -> Success : 6/27/2024 12:52:19 AM
+Register Route -> /welcome : 6/27/2024 12:52:22 AM
+Register Route -> /logs : 6/27/2024 12:52:22 AM
+Route Register -> Success : 6/27/2024 12:52:22 AM
+Http Status -> Started : 6/27/2024 12:52:22 AM
+Initialization -> Success : 6/27/2024 7:47:59 AM
+Register Route -> /welcome : 6/27/2024 7:48:01 AM
+Register Route -> /logs : 6/27/2024 7:48:01 AM
+Route Register -> Success : 6/27/2024 7:48:02 AM
+Http Status -> Started : 6/27/2024 7:48:02 AM
+Initialization -> Success : 6/27/2024 7:51:43 AM
+Register Route -> /welcome : 6/27/2024 7:51:46 AM
+Register Route -> /logs : 6/27/2024 7:51:46 AM
+Route Register -> Success : 6/27/2024 7:51:46 AM
+Http Status -> Started : 6/27/2024 7:51:46 AM
+Initialization -> Success : 6/27/2024 8:01:23 AM
+Register Route -> /welcome : 6/27/2024 8:01:25 AM
+Register Route -> /logs : 6/27/2024 8:01:25 AM
+Route Register -> Success : 6/27/2024 8:01:25 AM
+Http Status -> Started : 6/27/2024 8:01:26 AM
+Request GET -> Receive from 127.0.0.1:56909 Route -> logs : 6/27/2024 8:01:29 AM
+Initialization -> Success : 6/27/2024 8:02:10 AM
+Register Route -> /welcome : 6/27/2024 8:02:12 AM
+Register Route -> /logs : 6/27/2024 8:02:12 AM
+Route Register -> Success : 6/27/2024 8:02:12 AM
+Http Status -> Started : 6/27/2024 8:02:12 AM
+Initialization -> Success : 6/27/2024 8:02:27 AM
+Register Route -> /welcome : 6/27/2024 8:02:29 AM
+Register Route -> /logs : 6/27/2024 8:02:29 AM
+Route Register -> Success : 6/27/2024 8:02:29 AM
+Http Status -> Started : 6/27/2024 8:02:29 AM
+Request GET -> Receive from 127.0.0.1:56951 Route -> logs : 6/27/2024 8:02:36 AM
+Initialization -> Success : 6/27/2024 8:08:56 AM
+Register Route -> /welcome : 6/27/2024 8:08:58 AM
+Register Route -> /logs : 6/27/2024 8:08:58 AM
+Route Register -> Success : 6/27/2024 8:08:58 AM
+Http Status -> Started : 6/27/2024 8:08:58 AM
+Request GET -> Receive from 127.0.0.1:57031 Route -> logs : 6/27/2024 8:09:01 AM
+Initialization -> Success : 6/27/2024 8:15:13 AM
+Register Route -> /welcome : 6/27/2024 8:15:15 AM
+Register Route -> /logs : 6/27/2024 8:15:15 AM
+Route Register -> Success : 6/27/2024 8:15:15 AM
+Http Status -> Started : 6/27/2024 8:15:16 AM
+Initialization -> Success : 6/27/2024 8:15:44 AM
+Register Route -> /welcome : 6/27/2024 8:15:46 AM
+Register Route -> /logs : 6/27/2024 8:15:46 AM
+Route Register -> Success : 6/27/2024 8:15:46 AM
+Http Status -> Started : 6/27/2024 8:15:46 AM
+Request GET -> Receive from 127.0.0.1:57095 Route -> logs : 6/27/2024 8:15:49 AM
+Request GET -> Receive from 127.0.0.1:57095 Route -> logs : 6/27/2024 8:15:54 AM
+Initialization -> Success : 6/27/2024 8:18:34 AM
+Register Route -> /welcome : 6/27/2024 8:18:36 AM
+Register Route -> /logs : 6/27/2024 8:18:36 AM
+Route Register -> Success : 6/27/2024 8:18:36 AM
+Http Status -> Started : 6/27/2024 8:18:36 AM
+Request GET -> Receive from 127.0.0.1:57131 Route -> logs : 6/27/2024 8:18:40 AM
+Initialization -> Success : 6/27/2024 8:25:31 AM
+Register Route -> /welcome : 6/27/2024 8:25:33 AM
+Register Route -> /logs : 6/27/2024 8:25:33 AM
+Route Register -> Success : 6/27/2024 8:25:33 AM
+Http Status -> Started : 6/27/2024 8:25:33 AM
+Request GET -> Receive from 127.0.0.1:57166 Route -> logs : 6/27/2024 8:25:36 AM
+Initialization -> Success : 6/27/2024 8:27:13 AM
+Register Route -> /welcome : 6/27/2024 8:27:15 AM
+Register Route -> /logs : 6/27/2024 8:27:15 AM
+Route Register -> Success : 6/27/2024 8:27:15 AM
+Http Status -> Started : 6/27/2024 8:27:15 AM
+Request GET -> Receive from 127.0.0.1:57221 Route -> logs : 6/27/2024 8:27:23 AM
+Initialization -> Success : 6/27/2024 8:29:05 AM
+Register Route -> /welcome : 6/27/2024 8:29:08 AM
+Register Route -> /logs : 6/27/2024 8:29:08 AM
+Route Register -> Success : 6/27/2024 8:29:08 AM
+Http Status -> Started : 6/27/2024 8:29:08 AM
+Request GET -> Receive from 127.0.0.1:57239 Route -> logs : 6/27/2024 8:29:14 AM
+Request GET -> Receive from 127.0.0.1:57286 Route -> logs : 6/27/2024 8:44:16 AM
+Initialization -> Success : 6/27/2024 8:52:26 AM
+Register Route -> /welcome : 6/27/2024 8:52:33 AM
+Register Route -> /logs : 6/27/2024 8:52:33 AM
+Route Register -> Success : 6/27/2024 8:52:33 AM
+Http Status -> Started : 6/27/2024 8:52:33 AM
+Request GET -> Receive from 127.0.0.1:57397 Route -> logs : 6/27/2024 8:52:37 AM
+Initialization -> Success : 6/27/2024 9:03:19 AM
+Register Route -> /welcome : 6/27/2024 9:03:27 AM
+Register Route -> /logs : 6/27/2024 9:03:27 AM
+Route Register -> Success : 6/27/2024 9:03:27 AM
+Http Status -> Started : 6/27/2024 9:03:27 AM
+Initialization -> Success : 6/27/2024 9:46:59 AM
+Register Route -> /welcome : 6/27/2024 9:47:02 AM
+Register Route -> /logs : 6/27/2024 9:47:02 AM
+Route Register -> Success : 6/27/2024 9:47:02 AM
+Http Status -> Started : 6/27/2024 9:47:02 AM
+Request GET -> Receive from 127.0.0.1:58222 Route -> logs : 6/27/2024 9:47:04 AM
+Initialization -> Success : 6/27/2024 9:48:04 AM
+Register Route -> /welcome : 6/27/2024 9:48:06 AM
+Register Route -> /logs : 6/27/2024 9:48:06 AM
+Route Register -> Success : 6/27/2024 9:48:06 AM
+Http Status -> Started : 6/27/2024 9:48:06 AM
+Request GET -> Receive from 127.0.0.1:58280 Route -> logs : 6/27/2024 9:48:15 AM
+Initialization -> Success : 6/27/2024 9:49:01 AM
+Register Route -> /welcome : 6/27/2024 9:49:03 AM
+Register Route -> /logs : 6/27/2024 9:49:03 AM
+Route Register -> Success : 6/27/2024 9:49:03 AM
+Http Status -> Started : 6/27/2024 9:49:03 AM
+Request GET -> Receive from 127.0.0.1:58295 Route -> logs : 6/27/2024 9:49:06 AM
+Request GET -> Receive from 127.0.0.1:58295 Route ->  : 6/27/2024 9:49:10 AM
+Initialization -> Success : 6/27/2024 9:49:33 AM
+Register Route -> /welcome : 6/27/2024 9:49:35 AM
+Register Route -> /logs : 6/27/2024 9:49:35 AM
+Route Register -> Success : 6/27/2024 9:49:35 AM
+Http Status -> Started : 6/27/2024 9:49:35 AM
+Request GET -> Receive from 127.0.0.1:58335 Route -> logs : 6/27/2024 9:49:36 AM
+Request GET -> Receive from 127.0.0.1:58335 Route ->  : 6/27/2024 9:49:40 AM
+Initialization -> Success : 6/27/2024 9:49:57 AM
+Register Route -> /welcome : 6/27/2024 9:49:59 AM
+Register Route -> /logs : 6/27/2024 9:49:59 AM
+Route Register -> Success : 6/27/2024 9:49:59 AM
+Http Status -> Started : 6/27/2024 9:49:59 AM
+Request GET -> Receive from 127.0.0.1:58378 Route -> logs : 6/27/2024 9:50:02 AM
+Request GET -> Receive from 127.0.0.1:58378 Route -> welcome : 6/27/2024 9:50:05 AM
+Initialization -> Success : 6/27/2024 9:51:39 AM
+Register Route -> /welcome : 6/27/2024 9:51:41 AM
+Register Route -> /logs : 6/27/2024 9:51:41 AM
+Route Register -> Success : 6/27/2024 9:51:41 AM
+Http Status -> Started : 6/27/2024 9:51:41 AM
+Request GET -> Receive from 127.0.0.1:58466 Route -> logs : 6/27/2024 9:51:54 AM
+Request GET -> Receive from 127.0.0.1:58466 Route -> welcome : 6/27/2024 9:51:58 AM
+Request GET -> Receive from 127.0.0.1:58466 Route -> welcome : 6/27/2024 9:52:01 AM
+Request GET -> Receive from 127.0.0.1:58476 Route -> welcomee : 6/27/2024 9:53:32 AM
+Initialization -> Success : 6/27/2024 9:56:35 AM
+Register Route -> /welcome : 6/27/2024 9:56:37 AM
+Register Route -> /logs : 6/27/2024 9:56:37 AM
+Route Register -> Success : 6/27/2024 9:56:37 AM
+Http Status -> Started : 6/27/2024 9:56:37 AM
+Request GET -> Receive from 127.0.0.1:58541 Route -> welcome : 6/27/2024 9:56:56 AM
+Initialization -> Success : 6/27/2024 9:58:12 AM
+Initialization -> Success : 6/27/2024 9:58:23 AM
+Register Route -> /welcome : 6/27/2024 9:58:25 AM
+Register Route -> /logs : 6/27/2024 9:58:25 AM
+Route Register -> Success : 6/27/2024 9:58:25 AM
+Http Status -> Started : 6/27/2024 9:58:25 AM
+Request GET -> Receive from 127.0.0.1:58646 Route -> welcome : 6/27/2024 9:58:30 AM
+Request GET -> Receive from 127.0.0.1:58646 Route -> logs : 6/27/2024 9:58:38 AM
+Request GET -> Receive from 127.0.0.1:58646 Route -> logs : 6/27/2024 9:58:42 AM
+Request GET -> Receive from 127.0.0.1:58646 Route -> welcome : 6/27/2024 9:58:46 AM
+Request GET -> Receive from 127.0.0.1:58646 Route -> welcome : 6/27/2024 9:58:54 AM
+Initialization -> Success : 6/27/2024 10:04:11 AM
+Register Route -> /welcome : 6/27/2024 10:04:13 AM
+Register Route -> /logs : 6/27/2024 10:04:13 AM
+Route Register -> Success : 6/27/2024 10:04:13 AM
+Http Status -> Started : 6/27/2024 10:04:13 AM
+Request GET -> Receive from 127.0.0.1:58757 Route -> logs : 6/27/2024 10:04:53 AM
+Initialization -> Success : 6/27/2024 10:05:11 AM
+Register Route -> /welcome : 6/27/2024 10:05:13 AM
+Register Route -> /logs : 6/27/2024 10:05:13 AM
+Route Register -> Success : 6/27/2024 10:05:13 AM
+Http Status -> Started : 6/27/2024 10:05:13 AM
+Request GET -> Receive from 127.0.0.1:58767 Route -> logs : 6/27/2024 10:05:16 AM
+Initialization -> Success : 6/27/2024 10:06:06 AM
+Register Route -> /welcome : 6/27/2024 10:06:08 AM
+Register Route -> /logs : 6/27/2024 10:06:08 AM
+Route Register -> Success : 6/27/2024 10:06:08 AM
+Http Status -> Started : 6/27/2024 10:06:08 AM
+Request GET -> Receive from 127.0.0.1:58788 Route -> logs : 6/27/2024 10:06:18 AM
+Initialization -> Success : 6/27/2024 10:07:33 AM
+Register Route -> /welcome : 6/27/2024 10:07:37 AM
+Register Route -> /logs : 6/27/2024 10:07:37 AM
+Route Register -> Success : 6/27/2024 10:07:37 AM
+Http Status -> Started : 6/27/2024 10:07:37 AM
+Request GET -> Receive from 127.0.0.1:58810 Route -> logs : 6/27/2024 10:07:42 AM
+Initialization -> Success : 6/27/2024 10:08:10 AM
+Register Route -> /welcome : 6/27/2024 10:08:12 AM
+Register Route -> /logs : 6/27/2024 10:08:12 AM
+Route Register -> Success : 6/27/2024 10:08:12 AM
+Http Status -> Started : 6/27/2024 10:08:12 AM
+Request GET -> Receive from 127.0.0.1:58822 Route -> logs : 6/27/2024 10:08:26 AM
+Request GET -> Receive from 127.0.0.1:58822 Route -> welcome : 6/27/2024 10:08:32 AM
+Request GET -> Receive from 127.0.0.1:58822 Route -> welcome : 6/27/2024 10:08:35 AM
+Initialization -> Success : 6/27/2024 10:09:12 AM
+Register Route -> /welcome : 6/27/2024 10:09:15 AM
+Register Route -> /logs : 6/27/2024 10:09:15 AM
+Route Register -> Success : 6/27/2024 10:09:15 AM
+Http Status -> Started : 6/27/2024 10:09:15 AM
+Request GET -> Receive from 127.0.0.1:58879 Route -> logs : 6/27/2024 10:09:23 AM
+Request GET -> Receive from 127.0.0.1:58879 Route -> welcome : 6/27/2024 10:09:27 AM
+Request GET -> Receive from 127.0.0.1:58879 Route -> welcome : 6/27/2024 10:09:36 AM
+Request GET -> Receive from 127.0.0.1:58879 Route -> welcome : 6/27/2024 10:09:38 AM
+Request GET -> Receive from 127.0.0.1:58879 Route -> welcome : 6/27/2024 10:09:39 AM
+Request GET -> Receive from 127.0.0.1:58879 Route -> welcome : 6/27/2024 10:09:40 AM
+Initialization -> Success : 6/27/2024 10:10:48 AM
+Register Route -> /welcome : 6/27/2024 10:10:50 AM
+Register Route -> /logs : 6/27/2024 10:10:50 AM
+Route Register -> Success : 6/27/2024 10:10:50 AM
+Http Status -> Started : 6/27/2024 10:10:50 AM
+Request GET -> Receive from 127.0.0.1:58905 Route -> logs : 6/27/2024 10:11:50 AM
+Request GET -> Receive from 127.0.0.1:58905 Route -> welcome : 6/27/2024 10:12:00 AM
+Request GET -> Receive from 127.0.0.1:58905 Route -> logs : 6/27/2024 10:12:02 AM
+Request GET -> Receive from 127.0.0.1:58905 Route -> welcome : 6/27/2024 10:12:06 AM
+Request GET -> Receive from 127.0.0.1:58905 Route -> logs : 6/27/2024 10:12:07 AM
+Initialization -> Success : 6/27/2024 10:42:34 AM
+Route Register -> Success : 6/27/2024 10:42:34 AM
+Initialization -> Success : 6/27/2024 10:43:12 AM
+Route Register -> Success : 6/27/2024 10:43:12 AM
+Initialization -> Success : 6/27/2024 10:44:01 AM
+Route Register -> Success : 6/27/2024 10:44:01 AM
+Initialization -> Success : 6/27/2024 10:44:25 AM
+Route Register -> Success : 6/27/2024 10:44:26 AM
+Initialization -> Success : 6/27/2024 10:45:07 AM
+Route Register -> Success : 6/27/2024 10:45:07 AM
+Initialization -> Success : 6/27/2024 10:46:29 AM
+Route Register -> Success : 6/27/2024 10:46:29 AM
+Register Route -> /welcome : 6/27/2024 10:46:31 AM
+Register Route -> /logs : 6/27/2024 10:46:31 AM
+Route Register -> Success : 6/27/2024 10:46:31 AM
+Http Status -> Started : 6/27/2024 10:46:31 AM
+Http Status -> Started : 6/27/2024 10:46:31 AM
+Request GET -> Receive from 127.0.0.1:59684 Route -> logs : 6/27/2024 10:46:52 AM
+Initialization -> Success : 6/27/2024 10:47:44 AM
+Route Register -> Success : 6/27/2024 10:47:44 AM
+Initialization -> Success : 6/27/2024 10:48:15 AM
+Route Register -> Success : 6/27/2024 10:48:15 AM
+Initialization -> Success : 6/27/2024 10:49:06 AM
+Route Register -> Success : 6/27/2024 10:49:06 AM
+Initialization -> Success : 6/27/2024 10:49:38 AM
+Route Register -> Success : 6/27/2024 10:49:38 AM
+Register Route -> /welcome : 6/27/2024 10:49:42 AM
+Register Route -> /logs : 6/27/2024 10:49:42 AM
+Route Register -> Success : 6/27/2024 10:49:42 AM
+Http Status -> Started : 6/27/2024 10:49:42 AM
+Http Status -> Started : 6/27/2024 10:49:42 AM
+Request GET -> Receive from 127.0.0.1:59988 Route -> logs : 6/27/2024 10:49:50 AM
+Initialization -> Success : 6/27/2024 10:51:01 AM
+Route Register -> Success : 6/27/2024 10:51:01 AM
+Register Route -> /welcome : 6/27/2024 10:51:05 AM
+Register Route -> /logs : 6/27/2024 10:51:05 AM
+Route Register -> Success : 6/27/2024 10:51:05 AM
+Http Status -> Started : 6/27/2024 10:51:05 AM
+Initialization -> Success : 6/27/2024 10:53:08 AM
+Route Register -> Success : 6/27/2024 10:53:09 AM
+Register Route -> /welcome : 6/27/2024 10:53:11 AM
+Register Route -> /logs : 6/27/2024 10:53:11 AM
+Route Register -> Success : 6/27/2024 10:53:11 AM
+Http Status -> Started : 6/27/2024 10:53:11 AM
+Initialization -> Success : 6/27/2024 10:53:54 AM
+Route Register -> Success : 6/27/2024 10:53:54 AM
+Register Route -> /welcome : 6/27/2024 10:53:56 AM
+Register Route -> /logs : 6/27/2024 10:53:56 AM
+Route Register -> Success : 6/27/2024 10:53:56 AM
+Http Status -> Started : 6/27/2024 10:53:56 AM
+Initialization -> Success : 6/27/2024 10:54:15 AM
+Route Register -> Success : 6/27/2024 10:54:15 AM
+Register Route -> /welcome : 6/27/2024 10:54:17 AM
+Register Route -> /logs : 6/27/2024 10:54:17 AM
+Route Register -> Success : 6/27/2024 10:54:17 AM
+Http Status -> Started : 6/27/2024 10:54:17 AM
+Initialization -> Success : 6/27/2024 10:54:33 AM
+Route Register -> Success : 6/27/2024 10:54:33 AM
+Register Route -> /welcome : 6/27/2024 10:54:37 AM
+Register Route -> /logs : 6/27/2024 10:54:37 AM
+Route Register -> Success : 6/27/2024 10:54:37 AM
+Http Status -> Started : 6/27/2024 10:54:37 AM
+Initialization -> Success : 6/27/2024 10:56:22 AM
+Route Register -> Success : 6/27/2024 10:56:23 AM
+Register Route -> /welcome : 6/27/2024 10:56:26 AM
+Register Route -> /logs : 6/27/2024 10:56:26 AM
+Route Register -> Success : 6/27/2024 10:56:26 AM
+Http Status -> Started : 6/27/2024 10:56:26 AM
+Initialization -> Success : 6/27/2024 10:57:35 AM
+Route Register -> Success : 6/27/2024 10:57:36 AM
+Register Route -> /welcome : 6/27/2024 10:57:38 AM
+Register Route -> /logs : 6/27/2024 10:57:38 AM
+Route Register -> Success : 6/27/2024 10:57:38 AM
+Initialization -> Success : 6/27/2024 10:58:11 AM
+Register Route -> /welcome : 6/27/2024 10:58:13 AM
+Register Route -> /logs : 6/27/2024 10:58:13 AM
+Initialization -> Success : 6/27/2024 10:58:39 AM
+Register Route -> /welcome : 6/27/2024 10:58:42 AM
+Register Route -> /logs : 6/27/2024 10:58:42 AM
+Route Register -> Success : 6/27/2024 10:58:42 AM
+Initialization -> Success : 6/27/2024 10:59:49 AM
+Register Route -> /welcome : 6/27/2024 10:59:51 AM
+Register Route -> /logs : 6/27/2024 10:59:51 AM
+Route Register -> Success : 6/27/2024 10:59:51 AM
+Initialization -> Success : 6/27/2024 11:02:34 AM
+Register Route -> /welcome : 6/27/2024 11:02:36 AM
+Register Route -> /logs : 6/27/2024 11:02:36 AM
+Route Register -> Success : 6/27/2024 11:02:36 AM
+Initialization -> Success : 6/27/2024 11:03:45 AM
+Register Route -> /welcome : 6/27/2024 11:03:47 AM
+Register Route -> /logs : 6/27/2024 11:03:47 AM
+Route Register -> Success : 6/27/2024 11:03:47 AM

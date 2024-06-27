@@ -16,6 +16,8 @@ namespace Adventofcode_day1.Views
         {
              Console.WriteLine("Refresh Live");
              Instance.domdocument.AddToQueue("lara_str", "Proof of live refresh");
+             Instance.domdocument.AddJavascript(htmlBuilder.AddLiveNotification("test", "test"));
+             Instance.Route.Redirect("/welcome");
         }
 
         public static void Initialize()
@@ -27,9 +29,10 @@ namespace Adventofcode_day1.Views
                 .AddHead()
                 .Page()
                 .Center()
-                .AddText("Welcome to LaraSharp", "lara_str")
-                .AddActionButton("Add Log", async () => await EditDiv(), ButtonStyle.Primary)
-                .AddLiveTable("api/logs", new[] { "email" })
+                .Form("/submitForm") // The URL where the form data will be sent
+                .AddInput("Name", "Enter your name", "name")
+                .AddTextArea("Message", "Enter your message", "message")
+                .EndForm()
                 .EndCenter()
                 .EndPage()
                 .GetHTML();

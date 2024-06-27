@@ -68,19 +68,11 @@ namespace Adventofcode_day1.Server
                 {
                     Instance.debugger.DebugInfo("Request GET -> Receive from " + req.RemoteEndPoint.ToString() + " Route -> " + route, "HTTP GET");
                     Log.Logger.LogMessage("Request GET -> Receive from " + req.RemoteEndPoint.ToString() + " Route -> " + route);
-                    if (route == "logincheck")
-                    { 
-                        Console.WriteLine("Login Check: " + await User.CheckLogin(req.QueryString["username"], req.QueryString["password"]));
-                        view = await User.CheckLogin(req.QueryString["username"], req.QueryString["password"]);
-                        
-                    }else if (route == "register")
-                    {
-                        view = Routes.GetRoute(await User.CheckLogin(req.QueryString["username"], req.QueryString["password"]));
-                    }
-                    else
-                    {
-                        view = Routes.GetRoute(route);
-                    }
+                    view = Routes.GetRoute(route);
+                    Instance.debugger.DebugInfo("View -> " + route, "HTTP GET");
+                    
+                    Instance.debugger.DebugInfo("Add Route to Cache -> " + route, "HTTP GET");
+                    await Instance.Route.AddCachedRoute(route);
                 }
                 else if (req.HttpMethod == "POST")
                 {

@@ -3,6 +3,7 @@ using System.Management.Instrumentation;
 using Adventofcode_day1.Html;
 using Adventofcode_day1.Javascript;
 using Adventofcode_day1.Models;
+using Instance = Adventofcode_day1.Settings.Instance;
 
 namespace Adventofcode_day1.Views
 {
@@ -13,6 +14,8 @@ namespace Adventofcode_day1.Views
         {
            new DomEditor().AddToQueue("lara_str", "Refreshed Text");
         }
+        
+        
         
         
         
@@ -28,6 +31,7 @@ namespace Adventofcode_day1.Views
                    .AddText("Welcome to LaraSharp", "lara_str")
                     .AddActionButton("Live Change", EditText, ButtonStyle.Primary)
                     .AddLiveTable("api/usertable" ,new []{"email"})
+                    .AddActionButton("Redirect Back", () => Instance.Route.RedirectBack(), ButtonStyle.Primary)
                   .EndCenter()
                  .EndPage()
                 .GetHTML();

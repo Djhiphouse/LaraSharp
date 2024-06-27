@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -17,6 +18,7 @@ public class Program
 {
     static async Task Main(string[] args)
     {
+        
         Instance.ManagedUserInput(args);
         Instance.Initialize();
         
@@ -24,7 +26,7 @@ public class Program
         Instance.ViewsInitialize();
         Instance.RegisterRoute("/welcome", Login.htmlBuilder);
         Instance.RegisterRoute("/logs", LogsView.htmlBuilder);
-        
+         
         Instance.RegisterApiRoute("/api/usertable",  request =>
         {
             var users =  Task.Run(() => User.GetUsersForTable());

@@ -49,5 +49,11 @@ namespace Adventofcode_day1.Javascript
             commandQueue.Enqueue(command);
             Instance.debugger.DebugInfo($"Edit Element -> " + elementById,"LIVE REFRESH");
         }
+        
+        public void AddJavascript(string script)
+        {
+            commandQueue.Enqueue(script);
+            Instance.debugger.DebugInfo($"Add Javascript -> " + script,"LIVE REFRESH");
+        }
     }
 }

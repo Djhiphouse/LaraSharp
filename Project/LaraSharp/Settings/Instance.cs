@@ -16,6 +16,7 @@ namespace Adventofcode_day1.Settings
         public static Settings settings = new Settings();
         public static DomEditor domdocument;
         public static Debugger debugger;
+        public static Routes Route;
         public static ApiRouter api;
         public static Http http;
         public static string Host {get; set;}
@@ -32,6 +33,7 @@ namespace Adventofcode_day1.Settings
             Host = settings.GetSetting("HOST");
             Port = settings.GetSetting("PORT");
             
+            Route = new Routes();
             actionHandler = new HttpServer();
             api = new ApiRouter();
             domdocument = new DomEditor();
