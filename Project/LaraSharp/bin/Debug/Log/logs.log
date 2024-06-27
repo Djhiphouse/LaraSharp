@@ -1643,3 +1643,31 @@ Route Register -> Success : 6/27/2024 12:32:06 PM
 Http Status -> Started : 6/27/2024 12:32:06 PM
 Request GET -> Receive from 127.0.0.1:49347 Route ->  : 6/27/2024 12:32:07 PM
 Request GET -> Receive from 127.0.0.1:49348 Route -> welcome : 6/27/2024 12:32:22 PM
+Initialization -> Success : 6/27/2024 12:39:52 PM
+Register Route -> /welcome : 6/27/2024 12:39:54 PM
+Register Route -> /logs : 6/27/2024 12:39:54 PM
+Register Route -> /error : 6/27/2024 12:39:54 PM
+Route Register -> Success : 6/27/2024 12:39:54 PM
+Http Status -> Started : 6/27/2024 12:39:54 PM
+Request GET -> Receive from 127.0.0.1:49433 Route -> welcom : 6/27/2024 12:39:55 PM
+Initialization -> Success : 6/27/2024 12:40:20 PM
+Register Route -> /welcome : 6/27/2024 12:40:22 PM
+Register Route -> /logs : 6/27/2024 12:40:22 PM
+Register Route -> /error : 6/27/2024 12:40:22 PM
+Route Register -> Success : 6/27/2024 12:40:22 PM
+Http Status -> Started : 6/27/2024 12:40:22 PM
+Request GET -> Receive from 127.0.0.1:49453 Route -> welcom : 6/27/2024 12:40:29 PM
+Initialization -> Success : 6/27/2024 12:41:29 PM
+Register Route -> /welcome : 6/27/2024 12:41:31 PM
+Register Route -> /logs : 6/27/2024 12:41:31 PM
+Register Route -> /error : 6/27/2024 12:41:31 PM
+Route Register -> Success : 6/27/2024 12:41:31 PM
+Http Status -> Started : 6/27/2024 12:41:31 PM
+Request GET -> Receive from 127.0.0.1:49483 Route -> welcom : 6/27/2024 12:41:33 PM
+Initialization -> Success : 6/27/2024 12:41:51 PM
+Register Route -> /welcome : 6/27/2024 12:41:53 PM
+Register Route -> /logs : 6/27/2024 12:41:53 PM
+Register Route -> /error : 6/27/2024 12:41:53 PM
+Route Register -> Success : 6/27/2024 12:41:53 PM
+Http Status -> Started : 6/27/2024 12:41:53 PM
+Request GET -> Receive from 127.0.0.1:49525 Route -> welcom : 6/27/2024 12:41:56 PM

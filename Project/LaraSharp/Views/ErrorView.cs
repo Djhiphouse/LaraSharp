@@ -14,7 +14,10 @@ namespace Adventofcode_day1.Views
                     .AddHead()
                         .Page()
                             .div("w-full h-screen font-bold flex flex-col justify-center items-center bg-black")
-                                .AddText("Error 404", "error", 42)
+                                .div("animate-bounce")
+                                    .AddImage("https://github.com/Djhiphouse/LaraSharp/blob/main/Project/LaraSharp/Icons/error.png?raw=true", "error", 24, 24)
+                                .endDiv()
+                
                                 .AddText("Route no found", "error", 24)
                             .endDiv()
                         .EndCenter()
