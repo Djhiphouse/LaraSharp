@@ -21,11 +21,12 @@ public class Program
         
         Instance.ManagedUserInput(args);
         Instance.Initialize();
-        
         Instance.SqlInitialize();
         Instance.ViewsInitialize();
-        Instance.RegisterRoute("/welcome", Login.htmlBuilder);
+        
+        Instance.RegisterRoute("/welcome", WelcomeView.htmlBuilder);
         Instance.RegisterRoute("/logs", LogsView.htmlBuilder);
+        Instance.RegisterRoute("/error", ErrorView.htmlBuilder);
          
         Instance.RegisterApiRoute("/api/usertable",  request =>
         {

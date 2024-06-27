@@ -195,8 +195,9 @@
     <Compile Include="Settings\Utils.cs" />
     <Compile Include="Sql\SqlBuilder.cs" />
     <Compile Include="Models\session.cs" />
-    <Compile Include="Views\Login.cs" />
+    <Compile Include="Views\ErrorView.cs" />
     <Compile Include="Views\LogsView.cs" />
+    <Compile Include="Views\WelcomeView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icons\csharp.png" />

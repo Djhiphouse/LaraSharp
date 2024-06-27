@@ -70,6 +70,37 @@ namespace Adventofcode_day1.Html
                 </script>");
             return this;
         }
+
+        public HtmlBuilder AddTimedNotification(string title, string message, int time)
+        {
+            _html.Append($@"
+               <script>
+                let timerInterval;
+                Swal.fire({{
+                  title: ""{title}"",
+                  html: ""{message}"",
+                  timer: {time},
+                  timerProgressBar: true,
+                  didOpen: () => {{
+                    Swal.showLoading();
+                    const timer = Swal.getPopup().querySelector(""b"");
+                    timerInterval = setInterval(() => {{
+                      timer.textContent = `${{Swal.getTimerLeft()}}`;
+                    }}, 100);
+                  }},
+                  willClose: () => {{
+                    clearInterval(timerInterval);
+                  }}
+                }}).then((result) => {{
+                  if (result.dismiss === Swal.DismissReason.timer) {{
+                    console.log(""I was closed by the timer"");
+                  }}
+                }});
+               </script>
+             ");
+
+            return this;
+        }
         
         public HtmlBuilder Page()
         {
@@ -96,6 +127,18 @@ namespace Adventofcode_day1.Html
         public HtmlBuilder AddLabel(string text)
         {
             _html.Append($"<label class='text-gray-700'>{text}</label>");
+            return this;
+        }
+
+        public HtmlBuilder div(string classes)
+        {
+            _html.Append($@"<div class='{classes}'>");
+            return this;
+        }
+
+        public HtmlBuilder endDiv()
+        {
+            _html.Append("</div>");
             return this;
         }
 
@@ -158,13 +201,13 @@ namespace Adventofcode_day1.Html
 
         public HtmlBuilder AddText(string text,  string id,int fontSize = 16)
         {
-            _html.Append($"<div id='{id}' class='text-{fontSize} text-gray-700'>{text}</div>");
+            _html.Append($"<div id='{id}' class='text-{fontSize} text-white'>{text}</div>");
             return this;
         }
 
-        public HtmlBuilder AddImage(string src, string alt)
+        public HtmlBuilder AddImage(string src, string alt, int width = 10, int height = 10)
         {
-            _html.Append($"<img src='{src}' alt='{alt}' class='w-20 h-20 rounded-full'>");
+            _html.Append($"<img src='{src}' alt='{alt}' class='w-{width} h-{height} rounded-full'>");
             return this;
         }
 

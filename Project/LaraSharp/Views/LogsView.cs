@@ -29,10 +29,10 @@ namespace Adventofcode_day1.Views
                 .AddHead()
                 .Page()
                 .Center()
-                .Form("/submitForm") // The URL where the form data will be sent
-                .AddInput("Name", "Enter your name", "name")
-                .AddTextArea("Message", "Enter your message", "message")
-                .EndForm()
+                .AddText("Welcome to LaraSharp", "lara_str")
+                .AddActionButton("Add Log", async () => await EditDiv(), ButtonStyle.Primary)
+                .AddLiveTable("api/logs", new[] { "email" })
+                .AddNotification("This is a notification", "test")
                 .EndCenter()
                 .EndPage()
                 .GetHTML();
