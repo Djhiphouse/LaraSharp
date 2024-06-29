@@ -197,6 +197,7 @@
     <Compile Include="Models\session.cs" />
     <Compile Include="Views\ErrorView.cs" />
     <Compile Include="Views\LogsView.cs" />
+    <Compile Include="Views\TutorialView.cs" />
     <Compile Include="Views\WelcomeView.cs" />
   </ItemGroup>
   <ItemGroup>

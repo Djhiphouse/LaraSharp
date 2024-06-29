@@ -22,6 +22,7 @@ namespace Adventofcode_day1.Html
     public class HtmlBuilder
     {
         protected StringBuilder _html;
+        public Dictionary<string, string> NavLinks = new Dictionary<string, string>();
 
         
         public string AddLiveNotification(string title, string message, string icon = "success")
@@ -44,6 +45,76 @@ namespace Adventofcode_day1.Html
         {
             return this;
         }
+
+        public void AddNavigationPoint(string text, string href)
+        {
+            NavLinks.Add(text, href);
+        }
+        
+      public HtmlBuilder Navigation(string logourl = "https://cdn.discordapp.com/attachments/1165057088146386954/1255180248757174322/DALL_E-2024-06-25-17.14-removebg-preview.png?ex=6680ce73&is=667f7cf3&hm=16186b8b924d1ffe31fcb201eac8d89e363c561b0ae170f424adaf0712d55089&")
+{
+    // Ensure NavLinks is initialized
+    if (NavLinks == null)
+    {
+        NavLinks = new Dictionary<string, string>();
+    }
+
+    _html.Append($@"
+        <div class=""flex flex-wrap place-items-center"">
+          <section class=""relative mx-auto"">
+              <!-- navbar -->
+            <nav class=""flex justify-between bg-gray-900 text-white w-screen"">
+              <div class=""px-5 xl:px-12 py-6 flex w-full items-center"">
+                <a class=""text-3xl font-bold font-heading"" href=""#"">
+                   <img class=""h-9"" src=""{logourl}"" alt=""logo""/>
+                </a>
+                <!-- Nav Links -->
+                <ul class=""hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12"">");
+
+    // Add NavLinks dynamically
+    foreach (var navLink in NavLinks)
+    {
+        _html.Append($@"
+            <li><a href=""{navLink.Value}"" class=""text-white hover:text-gray-200"">{navLink.Key}</a></li>");
+    }
+
+    _html.Append($@"
+                </ul>
+                <!-- Header Icons -->
+                <div class=""hidden xl:flex items-center space-x-5 items-center"">
+                  <a class=""hover:text-gray-200"" href=""#"">
+                    <svg xmlns=""http://www.w3.org/2000/svg"" class=""h-6 w-6"" fill=""none"" viewBox=""0 0 24 24"" stroke=""currentColor"">
+                      <path stroke-linecap=""round"" stroke-linejoin=""round"" stroke-width=""2"" d=""M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"" />
+                    </svg>
+                  </a>
+                  <a class=""flex items-center hover:text-gray-200"" href=""#"">
+                      <svg xmlns=""http://www.w3.org/2000/svg"" class=""h-6 w-6"" fill=""none"" viewBox=""0 0 24 24"" stroke=""currentColor"">
+                          <path stroke-linecap=""round"" stroke-linejoin=""round"" stroke-width=""2"" d=""M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"" />
+                      </svg>
+                    <span class=""flex absolute -mt-5 ml-4"">
+                      <span class=""animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75""></span>
+                        <span class=""relative inline-flex rounded-full h-3 w-3 bg-pink-500"">
+                        </span>
+                      </span>
+                  </a>
+                  <!-- Sign In / Register      -->
+                  <a class=""flex items-center hover:text-gray-200"" href=""#"">
+                      <svg xmlns=""http://www.w3.org/2000/svg"" class=""h-6 w-6 hover:text-gray-200"" fill=""none"" viewBox=""0 0 24 24"" stroke=""currentColor"">
+                        <path stroke-linecap=""round"" stroke-linejoin=""round"" stroke-width=""2"" d=""M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"" />
+                      </svg>
+                  </a>
+
+                </div>
+              </div>
+            </nav>
+
+          </section>
+        </div>
+    ");
+
+    return this;
+}
+
 
         public HtmlBuilder AddHead()
         {
@@ -104,12 +175,12 @@ namespace Adventofcode_day1.Html
         
         public HtmlBuilder Page()
         {
-            _html.Append("<div class='w-full h-auto flex flex-col items-center'>");
+            _html.Append("<div class='w-full h-screen flex flex-col items-center'>");
             return this;
         }
         public HtmlBuilder Center()
         {
-            _html.Append("<div class='w-full h-full flex flex-col items-center justify-center'>");
+            _html.Append("<div class='w-full h-screen flex flex-col items-center justify-center'>");
             return this;
         }
 
@@ -130,13 +201,13 @@ namespace Adventofcode_day1.Html
             return this;
         }
 
-        public HtmlBuilder div(string classes)
+        public HtmlBuilder Div(string classes = "")
         {
             _html.Append($@"<div class='{classes}'>");
             return this;
         }
 
-        public HtmlBuilder endDiv()
+        public HtmlBuilder EndDiv()
         {
             _html.Append("</div>");
             return this;
@@ -240,7 +311,53 @@ namespace Adventofcode_day1.Html
         }
 
 
+        public HtmlBuilder Section(string classes)
+        {
+            _html.Append($"<section class='{classes}'>");
+            return this;
+        }
+        
+        public HtmlBuilder Nav(string classes)
+        {
+            _html.Append($"<nav class='{classes}'>");
+            return this;
+        }
 
+        public HtmlBuilder Ul(string classes)
+        {
+            _html.Append($"<ul class='{classes}'>");
+            return this;
+        }
+
+        public HtmlBuilder Li(string text, string href)
+        {
+            _html.Append($"<li><a href='{href}'>{text}</a></li>");
+            return this;
+        }
+
+        public HtmlBuilder Anchor(string classes, string href, string content)
+        {
+            _html.Append($"<a class='{classes}' href='{href}'>{content}</a>");
+            return this;
+        }
+
+        public HtmlBuilder EndUl()
+        {
+            _html.Append("</ul>");
+            return this;
+        }
+
+        public HtmlBuilder EndNav()
+        {
+            _html.Append("</nav>");
+            return this;
+        }
+
+        public HtmlBuilder EndSection()
+        {
+            _html.Append("</section>");
+            return this;
+        }
         
         public HtmlBuilder AddTable(string tableName, object model, List<string> blacklist = null)
         {
@@ -298,6 +415,16 @@ namespace Adventofcode_day1.Html
                 }
 
                 _html.Append("</tbody></table></div></div></div></section>");
+            }
+
+            return this;
+        }
+        
+        public HtmlBuilder ForEachActionButton(Dictionary<string, Action> actionButtons)
+        {
+            foreach (var button in actionButtons)
+            {
+                this.Anchor("hover:text-gray-200", "#", button.Value.ToString());
             }
 
             return this;
@@ -459,10 +586,15 @@ namespace Adventofcode_day1.Html
             
             return this;
         }
+        
+       
 
         public string GetHTML()
         {
             return _html.ToString();
         }
+        
     }
 }
+    
+

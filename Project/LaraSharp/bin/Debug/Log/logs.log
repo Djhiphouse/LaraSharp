@@ -1671,3 +1671,197 @@ Register Route -> /error : 6/27/2024 12:41:53 PM
 Route Register -> Success : 6/27/2024 12:41:53 PM
 Http Status -> Started : 6/27/2024 12:41:53 PM
 Request GET -> Receive from 127.0.0.1:49525 Route -> welcom : 6/27/2024 12:41:56 PM
+Request GET -> Receive from 127.0.0.1:49530 Route -> welcom : 6/27/2024 12:42:35 PM
+Initialization -> Success : 6/27/2024 6:09:37 PM
+Register Route -> /welcome : 6/27/2024 6:09:39 PM
+Register Route -> /logs : 6/27/2024 6:09:39 PM
+Register Route -> /error : 6/27/2024 6:09:39 PM
+Route Register -> Success : 6/27/2024 6:09:39 PM
+Http Status -> Started : 6/27/2024 6:09:39 PM
+Request GET -> Receive from 127.0.0.1:49625 Route ->  : 6/27/2024 6:09:58 PM
+Initialization -> Success : 6/27/2024 11:10:31 PM
+Register Route -> /welcome : 6/27/2024 11:10:37 PM
+Register Route -> /logs : 6/27/2024 11:10:37 PM
+Register Route -> /error : 6/27/2024 11:10:37 PM
+Route Register -> Success : 6/27/2024 11:10:37 PM
+Http Status -> Started : 6/27/2024 11:10:37 PM
+Request GET -> Receive from 127.0.0.1:49770 Route -> welcome : 6/27/2024 11:10:44 PM
+Initialization -> Success : 6/28/2024 12:14:33 AM
+Register Route -> /welcome : 6/28/2024 12:14:36 AM
+Register Route -> /logs : 6/28/2024 12:14:36 AM
+Register Route -> /error : 6/28/2024 12:14:36 AM
+Register Route -> /tutorial : 6/28/2024 12:14:36 AM
+Route Register -> Success : 6/28/2024 12:14:36 AM
+Http Status -> Started : 6/28/2024 12:14:36 AM
+Request GET -> Receive from 127.0.0.1:50054 Route -> tutorial : 6/28/2024 12:14:41 AM
+Initialization -> Success : 6/28/2024 12:15:18 AM
+Register Route -> /welcome : 6/28/2024 12:15:21 AM
+Register Route -> /logs : 6/28/2024 12:15:21 AM
+Register Route -> /error : 6/28/2024 12:15:21 AM
+Register Route -> /tutorial : 6/28/2024 12:15:21 AM
+Route Register -> Success : 6/28/2024 12:15:21 AM
+Http Status -> Started : 6/28/2024 12:15:21 AM
+Request GET -> Receive from 127.0.0.1:50122 Route -> tutorial : 6/28/2024 12:15:23 AM
+Initialization -> Success : 6/28/2024 12:16:25 AM
+Register Route -> /welcome : 6/28/2024 12:16:27 AM
+Register Route -> /logs : 6/28/2024 12:16:27 AM
+Register Route -> /error : 6/28/2024 12:16:27 AM
+Register Route -> /tutorial : 6/28/2024 12:16:27 AM
+Route Register -> Success : 6/28/2024 12:16:27 AM
+Http Status -> Started : 6/28/2024 12:16:27 AM
+Request GET -> Receive from 127.0.0.1:50324 Route -> tutorial : 6/28/2024 12:16:40 AM
+Initialization -> Success : 6/28/2024 12:17:16 AM
+Register Route -> /welcome : 6/28/2024 12:17:19 AM
+Register Route -> /logs : 6/28/2024 12:17:19 AM
+Register Route -> /error : 6/28/2024 12:17:19 AM
+Register Route -> /tutorial : 6/28/2024 12:17:19 AM
+Route Register -> Success : 6/28/2024 12:17:19 AM
+Http Status -> Started : 6/28/2024 12:17:19 AM
+Request GET -> Receive from 127.0.0.1:50372 Route -> tutorial : 6/28/2024 12:17:23 AM
+Initialization -> Success : 6/28/2024 12:25:18 AM
+Register Route -> /welcome : 6/28/2024 12:25:20 AM
+Register Route -> /logs : 6/28/2024 12:25:20 AM
+Register Route -> /error : 6/28/2024 12:25:20 AM
+Register Route -> /tutorial : 6/28/2024 12:25:20 AM
+Route Register -> Success : 6/28/2024 12:25:20 AM
+Http Status -> Started : 6/28/2024 12:25:20 AM
+Request GET -> Receive from 127.0.0.1:50600 Route -> tutorial : 6/28/2024 12:25:23 AM
+Initialization -> Success : 6/28/2024 12:28:35 AM
+Register Route -> /welcome : 6/28/2024 12:28:37 AM
+Register Route -> /logs : 6/28/2024 12:28:37 AM
+Register Route -> /error : 6/28/2024 12:28:37 AM
+Register Route -> /tutorial : 6/28/2024 12:28:37 AM
+Route Register -> Success : 6/28/2024 12:28:37 AM
+Http Status -> Started : 6/28/2024 12:28:37 AM
+Request GET -> Receive from 127.0.0.1:50916 Route -> tutorial : 6/28/2024 12:28:41 AM
+Initialization -> Success : 6/28/2024 12:29:29 AM
+Register Route -> /welcome : 6/28/2024 12:29:31 AM
+Register Route -> /logs : 6/28/2024 12:29:31 AM
+Register Route -> /error : 6/28/2024 12:29:31 AM
+Register Route -> /tutorial : 6/28/2024 12:29:31 AM
+Route Register -> Success : 6/28/2024 12:29:31 AM
+Http Status -> Started : 6/28/2024 12:29:31 AM
+Request GET -> Receive from 127.0.0.1:50958 Route -> tutorial : 6/28/2024 12:29:32 AM
+Initialization -> Success : 6/28/2024 12:29:56 AM
+Register Route -> /welcome : 6/28/2024 12:29:59 AM
+Register Route -> /logs : 6/28/2024 12:29:59 AM
+Register Route -> /error : 6/28/2024 12:29:59 AM
+Register Route -> /tutorial : 6/28/2024 12:29:59 AM
+Route Register -> Success : 6/28/2024 12:29:59 AM
+Http Status -> Started : 6/28/2024 12:29:59 AM
+Request GET -> Receive from 127.0.0.1:51001 Route -> tutoria : 6/28/2024 12:30:07 AM
+Request GET -> Receive from 127.0.0.1:51001 Route -> tutorial : 6/28/2024 12:30:10 AM
+Initialization -> Success : 6/28/2024 12:31:10 AM
+Register Route -> /welcome : 6/28/2024 12:31:12 AM
+Register Route -> /logs : 6/28/2024 12:31:12 AM
+Register Route -> /error : 6/28/2024 12:31:12 AM
+Register Route -> /tutorial : 6/28/2024 12:31:12 AM
+Route Register -> Success : 6/28/2024 12:31:12 AM
+Http Status -> Started : 6/28/2024 12:31:13 AM
+Request GET -> Receive from 127.0.0.1:51119 Route -> tutorial : 6/28/2024 12:31:43 AM
+Initialization -> Success : 6/28/2024 12:34:25 AM
+Register Route -> /welcome : 6/28/2024 12:34:27 AM
+Register Route -> /logs : 6/28/2024 12:34:27 AM
+Register Route -> /error : 6/28/2024 12:34:27 AM
+Register Route -> /tutorial : 6/28/2024 12:34:27 AM
+Route Register -> Success : 6/28/2024 12:34:27 AM
+Http Status -> Started : 6/28/2024 12:34:27 AM
+Initialization -> Success : 6/28/2024 12:34:58 AM
+Register Route -> /welcome : 6/28/2024 12:35:01 AM
+Register Route -> /logs : 6/28/2024 12:35:01 AM
+Register Route -> /error : 6/28/2024 12:35:01 AM
+Register Route -> /tutorial : 6/28/2024 12:35:01 AM
+Route Register -> Success : 6/28/2024 12:35:01 AM
+Http Status -> Started : 6/28/2024 12:35:01 AM
+Request GET -> Receive from 127.0.0.1:51419 Route -> tutorial : 6/28/2024 12:35:10 AM
+Initialization -> Success : 6/29/2024 2:26:23 PM
+Register Route -> /welcome : 6/29/2024 2:26:27 PM
+Register Route -> /logs : 6/29/2024 2:26:27 PM
+Register Route -> /error : 6/29/2024 2:26:27 PM
+Register Route -> /tutorial : 6/29/2024 2:26:27 PM
+Route Register -> Success : 6/29/2024 2:26:27 PM
+Http Status -> Started : 6/29/2024 2:26:27 PM
+Request GET -> Receive from 127.0.0.1:55985 Route ->  : 6/29/2024 2:26:51 PM
+Request GET -> Receive from 127.0.0.1:55988 Route ->  : 6/29/2024 2:27:49 PM
+Request GET -> Receive from 127.0.0.1:55988 Route -> welcome : 6/29/2024 2:27:55 PM
+Request GET -> Receive from 127.0.0.1:55990 Route -> tutorial : 6/29/2024 2:28:14 PM
+Initialization -> Success : 6/29/2024 2:56:30 PM
+Register Route -> /welcome : 6/29/2024 2:56:33 PM
+Register Route -> /logs : 6/29/2024 2:56:33 PM
+Register Route -> /error : 6/29/2024 2:56:33 PM
+Register Route -> /tutorial : 6/29/2024 2:56:33 PM
+Route Register -> Success : 6/29/2024 2:56:33 PM
+Http Status -> Started : 6/29/2024 2:56:33 PM
+Request GET -> Receive from 127.0.0.1:56157 Route -> tutorial : 6/29/2024 2:56:38 PM
+Initialization -> Success : 6/29/2024 2:57:07 PM
+Register Route -> /welcome : 6/29/2024 2:57:09 PM
+Register Route -> /logs : 6/29/2024 2:57:09 PM
+Register Route -> /error : 6/29/2024 2:57:09 PM
+Register Route -> /tutorial : 6/29/2024 2:57:09 PM
+Route Register -> Success : 6/29/2024 2:57:09 PM
+Http Status -> Started : 6/29/2024 2:57:09 PM
+Request GET -> Receive from 127.0.0.1:56200 Route -> tutorial : 6/29/2024 2:57:21 PM
+Initialization -> Success : 6/29/2024 2:58:26 PM
+Register Route -> /welcome : 6/29/2024 2:58:28 PM
+Register Route -> /logs : 6/29/2024 2:58:28 PM
+Register Route -> /error : 6/29/2024 2:58:28 PM
+Register Route -> /tutorial : 6/29/2024 2:58:28 PM
+Route Register -> Success : 6/29/2024 2:58:28 PM
+Http Status -> Started : 6/29/2024 2:58:28 PM
+Request GET -> Receive from 127.0.0.1:56220 Route -> tutorial : 6/29/2024 2:58:31 PM
+Request GET -> Receive from 127.0.0.1:56220 Route -> tutorial : 6/29/2024 2:58:33 PM
+Initialization -> Success : 6/29/2024 3:00:49 PM
+Register Route -> /welcome : 6/29/2024 3:00:51 PM
+Register Route -> /logs : 6/29/2024 3:00:51 PM
+Register Route -> /error : 6/29/2024 3:00:51 PM
+Register Route -> /tutorial : 6/29/2024 3:00:51 PM
+Route Register -> Success : 6/29/2024 3:00:51 PM
+Http Status -> Started : 6/29/2024 3:00:51 PM
+Request GET -> Receive from 127.0.0.1:56269 Route -> tutorial : 6/29/2024 3:00:57 PM
+Initialization -> Success : 6/29/2024 3:06:17 PM
+Initialization -> Success : 6/29/2024 3:07:04 PM
+Register Route -> /welcome : 6/29/2024 3:07:06 PM
+Register Route -> /logs : 6/29/2024 3:07:06 PM
+Register Route -> /error : 6/29/2024 3:07:06 PM
+Register Route -> /tutorial : 6/29/2024 3:07:06 PM
+Route Register -> Success : 6/29/2024 3:07:06 PM
+Http Status -> Started : 6/29/2024 3:07:06 PM
+Request GET -> Receive from 127.0.0.1:56485 Route -> tutorial : 6/29/2024 3:07:09 PM
+Request GET -> Receive from 127.0.0.1:56485 Route -> welcome : 6/29/2024 3:07:11 PM
+Initialization -> Success : 6/29/2024 4:54:50 PM
+Register Route -> /welcome : 6/29/2024 4:54:53 PM
+Register Route -> /logs : 6/29/2024 4:54:53 PM
+Register Route -> /error : 6/29/2024 4:54:53 PM
+Register Route -> /tutorial : 6/29/2024 4:54:53 PM
+Route Register -> Success : 6/29/2024 4:54:53 PM
+Http Status -> Started : 6/29/2024 4:54:53 PM
+Request GET -> Receive from 127.0.0.1:56881 Route -> tutorial : 6/29/2024 4:56:21 PM
+Request GET -> Receive from 127.0.0.1:56881 Route -> logs : 6/29/2024 4:56:23 PM
+Initialization -> Success : 6/29/2024 4:59:10 PM
+Register Route -> /welcome : 6/29/2024 4:59:12 PM
+Register Route -> /logs : 6/29/2024 4:59:12 PM
+Register Route -> /error : 6/29/2024 4:59:12 PM
+Register Route -> /tutorial : 6/29/2024 4:59:12 PM
+Route Register -> Success : 6/29/2024 4:59:12 PM
+Http Status -> Started : 6/29/2024 4:59:12 PM
+Request GET -> Receive from 127.0.0.1:56975 Route -> tutorial : 6/29/2024 4:59:13 PM
+Request GET -> Receive from 127.0.0.1:56976 Route -> tutorial : 6/29/2024 4:59:36 PM
+Initialization -> Success : 6/29/2024 4:59:50 PM
+Register Route -> /welcome : 6/29/2024 4:59:52 PM
+Register Route -> /logs : 6/29/2024 4:59:52 PM
+Register Route -> /error : 6/29/2024 4:59:52 PM
+Register Route -> /tutorial : 6/29/2024 4:59:52 PM
+Route Register -> Success : 6/29/2024 4:59:52 PM
+Http Status -> Started : 6/29/2024 4:59:52 PM
+Request GET -> Receive from 127.0.0.1:57023 Route -> tutorial : 6/29/2024 5:00:10 PM
+Initialization -> Success : 6/29/2024 5:04:13 PM
+Register Route -> /welcome : 6/29/2024 5:04:18 PM
+Register Route -> /logs : 6/29/2024 5:04:18 PM
+Register Route -> /error : 6/29/2024 5:04:18 PM
+Register Route -> /tutorial : 6/29/2024 5:04:18 PM
+Route Register -> Success : 6/29/2024 5:04:18 PM
+Http Status -> Started : 6/29/2024 5:04:18 PM
+Request GET -> Receive from 127.0.0.1:57260 Route -> tutorial : 6/29/2024 5:04:27 PM
+Request GET -> Receive from 127.0.0.1:57260 Route -> logs : 6/29/2024 5:04:31 PM
+Request GET -> Receive from 127.0.0.1:57260 Route -> welcome : 6/29/2024 5:04:36 PM
+Request GET -> Receive from 127.0.0.1:57260 Route -> error : 6/29/2024 5:04:41 PM

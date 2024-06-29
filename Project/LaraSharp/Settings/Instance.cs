@@ -51,6 +51,7 @@ namespace Adventofcode_day1.Settings
             WelcomeView.Initialize();
             LogsView.Initialize();
             ErrorView.Initialize();
+            TutorialView.Initialize();
         }
         
         public static void RegisterRoute(string route, HtmlBuilder view)

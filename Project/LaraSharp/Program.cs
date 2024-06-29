@@ -27,18 +27,7 @@ public class Program
         Instance.RegisterRoute("/welcome", WelcomeView.htmlBuilder);
         Instance.RegisterRoute("/logs", LogsView.htmlBuilder);
         Instance.RegisterRoute("/error", ErrorView.htmlBuilder);
-         
-        Instance.RegisterApiRoute("/api/usertable",  request =>
-        {
-            var users =  Task.Run(() => User.GetUsersForTable());
-            return JsonConvert.SerializeObject(users);
-        });
-        
-        Instance.RegisterApiRoute("/api/logs",  request =>
-        {
-            var users =  Task.Run(() => Logs.GetLogsForTable());
-            return JsonConvert.SerializeObject(users);
-        });
+        Instance.RegisterRoute("/tutorial", TutorialView.htmlBuilder);
         
         Instance.StartUp();
         Thread.Sleep(-1);
